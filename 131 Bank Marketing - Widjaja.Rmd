@@ -1,7 +1,7 @@
 ---
 # Classification to Predict Bank Marketing Success  
-### Jesslyn Widjaja
-### PStat 131/231: Data Mining, Winter 2017
+- Jesslyn Widjaja
+- PStat 131/231: Data Mining, Winter 2017
 
 ## Abstract
 
