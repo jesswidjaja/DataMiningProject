@@ -1,12 +1,7 @@
 ---
-title: "Bank Marketing Final Project - Jesslyn Widjaja"
-author: "PSTAT 131, Winter 2017"
-date: due "March 22, 2017"
-output: pdf_document
-graphics: yes
-geometry: margin=0.75in
-output: pdf_document
----
+# Classification to Predict Bank Marketing Success  
+### Jesslyn Widjaja
+### PStat 131/231: Data Mining, Winter 2017
 
 ## Abstract
 
