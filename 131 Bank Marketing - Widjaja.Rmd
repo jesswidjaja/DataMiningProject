@@ -7,16 +7,6 @@ graphics: yes
 geometry: margin=0.75in
 output: pdf_document
 ---
-```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo=TRUE, 
-                      cache=TRUE, 
-                      fig.width=5, 
-                      fig.height=5,
-                      fig.align='center')
-indent1 = '    '
-indent2 = paste(rep(indent1, 2), collapse='')
-```
----
 
 ## Abstract
 
@@ -217,7 +207,7 @@ accuracy
 
 This approach leads to correct predictions for around 88% of the calls in the test data set, which is a significantly high accuracy rate. To see if the model still has room for improvement, I prune the decision tree.
 
-## *Pruning the Decision Tree*
+### Pruning the Decision Tree
 
 I determine the best size by using cross validation, which will use the classification error rate to guide the pruning process. The best size will thus be the size that minimizes this error rate, and this is shown through the code below.
 
