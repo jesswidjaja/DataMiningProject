@@ -166,7 +166,7 @@ table(pred=new.train$predy, true=train$y)
 Out of 3391 cases, the model classifies 2686 correctly (79.2%), which is lower than the previous accuracy rate at about 90%. However, out of the 3000 not subscribed to a term deposit, the model classifies 2360 correctly (78.67%) and out of 391 subscribed to a term deposit, 326 calls are classified correctly (83.38%). We see that this is a huge increase in the true positive rate and a much more accurate model overall.
 
 
-## Decision Tree
+## Decision Trees
 
 The next model I will use to classify the bank's calls into subscriptions or non-subscriptions is the decision tree. Among its advantages are that it can implicitly perform feature selection, nonlinear relationships between the parameters - which we might have here due to the categorical variables - will not affect the performance of the tree, and it is benifical to use for classification. All of the above prove to be enough reasons to give decision trees a try, so I proceed to do so in the following steps. 
 
@@ -217,7 +217,7 @@ accuracy
 
 This approach leads to correct predictions for around 88% of the calls in the test data set, which is a significantly high accuracy rate. To see if the model still has room for improvement, I prune the decision tree.
 
-## Pruning Tree
+# Pruning the Decision Tree
 
 I determine the best size by using cross validation, which will use the classification error rate to guide the pruning process. The best size will thus be the size that minimizes this error rate, and this is shown through the code below.
 
@@ -252,13 +252,13 @@ accuracy = sum(diag(error))/sum(error)
 accuracy
 ```
 
-The pruned decision tree leads to 89% of correct predictions, which is a bit more accurate than the original decision tree at 88%. It is also the most accurate prediction and takes the least amount of computing time out of all the models, so this is the one I choose.   
+The pruned decision tree leads to 89% of correct predictions, which is a bit more accurate than the original decision tree at 88%. It is also the most accurate prediction and takes the least amount of computing time out of all the models, so this is the model I will ultimately choose to determine telemarketing success.   
 
 ## Conclusion
 
 In conclusion, the decision tree ultimately led me to find a satisfactory model to predict whether the telemarketing calls from the bank lead to a client subscribing to a long-term deposit. It also identified which features would more likely lead to a subscription, such as unknown contact, an age younger than 60, 1 time of contact before this telemarketing campaign, and not having been contacted less than 185 days since being last contacted. Because of this specific set of potential criteria, the Portuguese retail bank can then focus more of its telemarketing efforts on clients with these attributes. 
 
-For further study, I can also perform randomForest or logistic regression given the features selected from the decision tree to see if it gives a higher probability of correctly predicting subscriptions and non-subscriptions. 
+For further study, I can also utilize a random forest or logistic regression given the features selected from the decision tree to see if they gives a higher probability of correctly predicting subscriptions and non-subscriptions. 
 
 Last but certainly not least, I would like to give my thanks to Professor Sang-Yun Oh and Kevin Zou for their time and resources in helping me to complete this project.
 
