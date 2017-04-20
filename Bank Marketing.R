@@ -1,6 +1,6 @@
 Sys.getenv("PATH")
 Sys.setenv(PATH="C:/Program Files/MiKTeX 2.9/miktex/bin/x64/",sep=";")
-bank <- read.csv("C:/Users/xiao cucu/Documents/classes - ucsb/PStat 131/bank/bank.csv", header=T)
+bank <- read.csv("~/bank.csv", header=T)
 str(bank)
 
 #check if there are missing values - since there are none, proceed
