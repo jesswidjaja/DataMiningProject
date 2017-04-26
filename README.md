@@ -20,7 +20,7 @@ Preprocessing
 
 The data set provided by the UCI Machine Learning Repository is in the format of an Excel spreadsheet. To read the data into R, I use the code below and check the structure of the data set.     
 ```{r}
-bank <- read.csv("C:/Users/xiao cucu/Documents/classes - ucsb/PStat 131/bank/bank.csv", header=T)
+bank <- read.csv("bank/bank.csv", header=T)
 str(bank) 
 ```
 From the output, it is seen that there are 7 numerical variables and 9 categorical variables, excluding the variable that represents the subscription status, y, which will be used as the response variable the models are attempting to predict. 
