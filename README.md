@@ -153,7 +153,7 @@ Out of 3391 cases, the model classifies 2686 correctly (79.2%), which is lower t
 
 ## Decision Trees
 
-The next model I will use to classify the bank's calls into subscriptions or non-subscriptions is the decision tree. Among its advantages are that it can implicitly perform feature selection, nonlinear relationships between the parameters - which we might have here due to the categorical variables - will not affect the performance of the tree, and it is benifical to use for classification. All of the above prove to be enough reasons to give decision trees a try, so I proceed to do so in the following steps. 
+The next model I will use to classify the bank's calls into subscriptions or non-subscriptions is the decision tree. Among its advantages are that it can implicitly perform feature selection, nonlinear relationships between the parameters - which we might have here due to the categorical variables - will not affect the performance of the tree, and it is beneficial to use for classification. All of the above prove to be enough reasons to give decision trees a try, so I proceed to do so in the following steps. 
 
 ```{r}
 bank <- bank[,-11] 
